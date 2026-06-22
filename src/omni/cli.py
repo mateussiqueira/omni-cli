@@ -8,7 +8,7 @@ from rich.panel import Panel
 from rich.text import Text
 
 from omni import __version__
-from omni.commands import config, github, hostinger, mcp, memory, unleash
+from omni.commands import completion, config, github, hostinger, mcp, memory, unleash
 
 app = typer.Typer(
     name="omni",
@@ -25,6 +25,7 @@ app.add_typer(hostinger.app, name="hostinger", help="🌐 Hostinger domain/VPS m
 app.add_typer(github.app, name="github", help="🐙 GitHub repository management")
 app.add_typer(unleash.app, name="unleash", help="🚦 Unleash feature flags")
 app.add_typer(config.app, name="config", help="⚙️  Omni CLI configuration")
+app.add_typer(completion.app, name="completion", help="🐚 Shell completion")
 
 
 @app.command("version")

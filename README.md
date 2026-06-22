@@ -4,6 +4,8 @@
 
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![PyPI](https://img.shields.io/badge/pypi-omni--cli-blue)](https://pypi.org/project/omni-cli/)
+[![CI](https://github.com/mateussiqueira/omni-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/mateussiqueira/omni-cli/actions/workflows/ci.yml)
 [![Tests](https://img.shields.io/badge/tests-4%2F4%20passing-brightgreen)](tests)
 
 ```text
@@ -26,6 +28,14 @@
 - ⚙️ **Config**: Centralized configuration
 
 ## 📦 Installation
+
+### From PyPI (recommended)
+
+```bash
+pip install omni-cli
+```
+
+### From source
 
 ```bash
 # Clone the repository
@@ -54,6 +64,38 @@ omni version
 
 # Interactive initial setup
 omni config init
+```
+
+## 🛠️ Development with Makefile
+
+Omni CLI includes a `Makefile` with common development tasks:
+
+```bash
+make install-dev    # Install with dev dependencies
+make test           # Run tests
+make lint           # Run linters
+make format         # Format code
+make type-check     # Run type checker
+make build          # Build package
+make clean          # Remove build artifacts
+```
+
+## 🐚 Shell Completion
+
+Enable tab completion for Omni CLI:
+
+```bash
+# Bash
+omni completion install bash
+source ~/.bashrc
+
+# Zsh
+omni completion install zsh
+source ~/.zshrc
+
+# Or view manual instructions
+omni completion bash
+omni completion zsh
 ```
 
 ## 📚 Documentation
@@ -197,13 +239,18 @@ omni-cli/
 │   │   ├── hostinger.py
 │   │   ├── github.py
 │   │   ├── unleash.py
-│   │   └── config.py
+│   │   ├── config.py
+│   │   └── completion.py
 │   └── core/               # Core utilities
 │       ├── config.py
 │       └── executor.py
 ├── tests/                  # Tests
 ├── docs/                   # Documentation (EN & PT)
-└── pyproject.toml          # Project configuration
+├── scripts/                # Shell completion scripts
+├── .github/workflows/      # CI/CD workflows
+├── Makefile                # Development tasks
+├── pyproject.toml          # Project configuration
+└── README.md               # Main documentation
 ```
 
 ## 🌍 Leading Open Source Countries

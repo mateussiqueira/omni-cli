@@ -122,6 +122,24 @@ omni config show
 omni config set thunderbolt_disk /Volumes/ThunderboltSSD
 ```
 
+## `omni completion`
+
+Shell completion setup.
+
+| Command | Description |
+|---------|-------------|
+| `omni completion bash` | Show Bash completion instructions |
+| `omni completion zsh` | Show Zsh completion instructions |
+| `omni completion install <bash\|zsh>` | Install completion automatically |
+
+### Examples
+
+```bash
+omni completion install bash
+omni completion install zsh
+omni completion bash
+```
+
 ## `omni status`
 
 Show overall Omni CLI status.

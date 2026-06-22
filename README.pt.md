@@ -4,6 +4,8 @@
 
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![PyPI](https://img.shields.io/badge/pypi-omni--cli-blue)](https://pypi.org/project/omni-cli/)
+[![CI](https://github.com/mateussiqueira/omni-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/mateussiqueira/omni-cli/actions/workflows/ci.yml)
 [![Tests](https://img.shields.io/badge/tests-4%2F4%20passing-brightgreen)](tests)
 
 ```text
@@ -26,6 +28,14 @@ O **Omni CLI** é um hub de linha de comando unificado que conecta e orquestra d
 - ⚙️ **Config**: Configuração centralizada
 
 ## 📦 Instalação
+
+### Via PyPI (recomendado)
+
+```bash
+pip install omni-cli
+```
+
+### Do source
 
 ```bash
 # Clone o repositório
@@ -54,6 +64,38 @@ omni version
 
 # Configuração inicial interativa
 omni config init
+```
+
+## 🛠️ Desenvolvimento com Makefile
+
+O Omni CLI inclui um `Makefile` com tarefas comuns de desenvolvimento:
+
+```bash
+make install-dev    # Instalar com dependências de desenvolvimento
+make test           # Rodar testes
+make lint           # Rodar linters
+make format         # Formatar código
+make type-check     # Rodar type checker
+make build          # Build do pacote
+make clean          # Remover artefatos de build
+```
+
+## 🐚 Shell Completion
+
+Ative o tab completion para o Omni CLI:
+
+```bash
+# Bash
+omni completion install bash
+source ~/.bashrc
+
+# Zsh
+omni completion install zsh
+source ~/.zshrc
+
+# Ou veja instruções manuais
+omni completion bash
+omni completion zsh
 ```
 
 ## 📚 Documentação
@@ -197,13 +239,18 @@ omni-cli/
 │   │   ├── hostinger.py
 │   │   ├── github.py
 │   │   ├── unleash.py
-│   │   └── config.py
+│   │   ├── config.py
+│   │   └── completion.py
 │   └── core/               # Core utilities
 │       ├── config.py
 │       └── executor.py
 ├── tests/                  # Testes
 ├── docs/                   # Documentação (EN & PT)
-└── pyproject.toml          # Configuração do projeto
+├── scripts/                # Scripts de shell completion
+├── .github/workflows/      # Workflows de CI/CD
+├── Makefile                # Tarefas de desenvolvimento
+├── pyproject.toml          # Configuração do projeto
+└── README.md               # Documentação principal
 ```
 
 ## 🌍 Países Líderes em Open Source
