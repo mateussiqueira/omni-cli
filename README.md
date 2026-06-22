@@ -101,8 +101,14 @@ omni completion zsh
 ## 📚 Documentation
 
 - [Getting Started](docs/GETTING_STARTED.md)
+- [Installation Guide](docs/INSTALLATION.md)
 - [Command Reference](docs/COMMANDS.md)
 - [Architecture](docs/ARCHITECTURE.md)
+- [Advanced Examples](docs/EXAMPLES.md)
+- [Troubleshooting](docs/TROUBLESHOOTING.md)
+- [Contributing](docs/CONTRIBUTING.md)
+- [FAQ](docs/FAQ.md)
+- [Changelog](CHANGELOG.md)
 - [Português](README.pt.md)
 
 ## 🧠 Memory Commands
