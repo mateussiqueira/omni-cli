@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="omniBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="omniAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="omniGlow" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#c4b5fd" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Terminal frame -->
+  <rect x="60" y="80" width="392" height="340" rx="24" fill="url(#omniBg)" stroke="url(#omniAccent)" stroke-width="4"/>
+
+  <!-- Terminal title bar dots -->
+  <circle cx="96" cy="116" r="8" fill="#ef4444"/>
+  <circle cx="124" cy="116" r="8" fill="#eab308"/>
+  <circle cx="152" cy="116" r="8" fill="#22c55e"/>
+
+  <!-- Terminal title -->
+  <text x="256" y="124" text-anchor="middle" font-family="monospace" font-size="14" fill="#6366f1" font-weight="bold">omni</text>
+
+  <!-- Prompt line 1 -->
+  <text x="96" y="180" font-family="monospace" font-size="22" fill="#a78bfa">$</text>
+  <text x="120" y="180" font-family="monospace" font-size="22" fill="#e2e8f0">omni</text>
+  <text x="196" y="180" font-family="monospace" font-size="22" fill="#6366f1">--help</text>
+
+  <!-- Output line 1 -->
+  <text x="96" y="220" font-family="monospace" font-size="18" fill="#94a3b8">omni v2.1.0 — CLI of CLIs</text>
+
+  <!-- Output line 2 -->
+  <text x="96" y="252" font-family="monospace" font-size="18" fill="#94a3b8">Plugins stored in: ~/.config/omni</text>
+
+  <!-- Subcommands -->
+  <text x="96" y="290" font-family="monospace" font-size="18" fill="#22c55e">  hub</text>
+  <text x="96" y="316" font-family="monospace" font-size="18" fill="#22c55e">  memory</text>
+  <text x="96" y="342" font-family="monospace" font-size="18" fill="#22c55e">  plugin</text>
+  <text x="96" y="368" font-family="monospace" font-size="18" fill="#22c55e">  docs</text>
+
+  <!-- Cursor blink -->
+  <rect x="248" y="354" width="14" height="22" rx="2" fill="#6366f1" opacity="0.8"/>
+
+  <!-- Glow behind terminal -->
+  <ellipse cx="256" cy="300" rx="180" ry="140" fill="url(#omniGlow)"/>
+</svg>
