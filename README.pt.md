@@ -25,8 +25,14 @@ O **Omni CLI** é um hub de linha de comando unificado que conecta e orquestra d
 - 🧠 **Memory**: Otimização de memória do macOS com SSD Thunderbolt 4
 - 🔌 **MCP**: Gerenciamento de servidores Model Context Protocol
 - 🌐 **Hostinger**: Gestão de domínios, DNS e VPS
+- ☁️ **Cloudflare**: Gerenciamento de DNS e cache
+- 🌩️ **AWS**: S3, EC2, Route53 via AWS CLI
+- ▲ **Vercel**: Projetos e deployments
 - 🐙 **GitHub**: Gerenciamento de repositórios, trending e clones
 - 🚦 **Unleash**: Gerenciamento de feature flags
+- 🔌 **Plugins**: Instalar e gerenciar plugins do Omni CLI
+- 🎭 **Perfis**: Alternar entre configurações dev/staging/prod
+- 🚀 **Self-update**: Atualizar o Omni CLI do PyPI
 - ⚙️ **Config**: Configuração centralizada
 
 ## 📦 Instalação
@@ -219,6 +225,105 @@ export OMNI_UNLEASH_URL=https://seu-unleash.com
 export OMNI_UNLEASH_API_TOKEN=seu_token
 ```
 
+## ☁️ Comandos Cloudflare
+
+```bash
+# Listar zonas
+omni cloudflare zones
+
+# Listar registros DNS
+omni cloudflare dns example.com
+
+# Limpar cache
+omni cloudflare purge example.com
+```
+
+Configure:
+
+```bash
+export OMNI_CLOUDFLARE_API_TOKEN=seu_token
+```
+
+## 🌩️ Comandos AWS
+
+```bash
+# Verificar status do AWS CLI
+omni aws status
+
+# Listar buckets S3
+omni aws s3
+
+# Listar instâncias EC2
+omni aws ec2 --region us-east-1
+
+# Listar zonas Route53
+omni aws route53
+```
+
+Requer o [AWS CLI](https://aws.amazon.com/cli/) instalado e configurado.
+
+## ▲ Comandos Vercel
+
+```bash
+# Listar projetos
+omni vercel projects
+
+# Listar deployments
+omni vercel deployments --project my-app
+
+# Listar variáveis de ambiente
+omni vercel env my-app
+```
+
+Configure:
+
+```bash
+export OMNI_VERCEL_TOKEN=seu_token
+```
+
+## 🔌 Comandos de Plugins
+
+```bash
+# Listar plugins instalados
+omni plugins list
+
+# Criar template de plugin
+omni plugins create meuplugin
+
+# Instalar plugin
+omni plugins install omni-cli-example
+
+# Desinstalar plugin
+omni plugins uninstall omni-cli-example
+```
+
+## 🎭 Perfis de Configuração
+
+```bash
+# Criar perfis
+omni config profile create dev
+omni config profile create prod
+
+# Trocar de perfil
+omni config profile use dev
+
+# Listar perfis
+omni config profile list
+```
+
+## 🚀 Self-Update
+
+```bash
+# Verificar atualizações
+omni update --check
+
+# Atualizar para versão mais recente
+omni update
+
+# Forçar reinstalação
+omni update --force
+```
+
 ## ⚙️ Configuração
 
 O Omni CLI armazena configurações em `~/.config/omni/config.toml`.
@@ -253,16 +358,25 @@ omni-cli/
 │   │   ├── memory.py
 │   │   ├── mcp.py
 │   │   ├── hostinger.py
+│   │   ├── cloudflare.py
+│   │   ├── aws.py
+│   │   ├── vercel.py
 │   │   ├── github.py
 │   │   ├── unleash.py
 │   │   ├── config.py
-│   │   └── completion.py
+│   │   ├── completion.py
+│   │   ├── plugins.py
+│   │   └── update.py
 │   └── core/               # Core utilities
 │       ├── config.py
-│       └── executor.py
+│       ├── executor.py
+│       ├── logger.py
+│       ├── plugins.py
+│       └── profiles.py
 ├── tests/                  # Testes
 ├── docs/                   # Documentação (EN & PT)
-├── scripts/                # Scripts de shell completion
+├── assets/                 # Logo e banner
+├── scripts/                # Scripts utilitários
 ├── .github/workflows/      # Workflows de CI/CD
 ├── Makefile                # Tarefas de desenvolvimento
 ├── pyproject.toml          # Configuração do projeto

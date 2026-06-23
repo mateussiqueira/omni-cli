@@ -165,17 +165,47 @@ Evite usar contas pessoais para operações do time. Crie service accounts ou bo
 - Usuários de API Hostinger dedicados
 - Service accounts do Unleash
 
+## Perfis de Configuração
+
+Use perfis para alternar entre ambientes:
+
+```bash
+# Criar perfil de produção
+omni config profile create production
+omni config set hostinger_api_token $PROD_HOSTINGER_TOKEN
+omni config set unleash_url https://unleash.prod.empresa.com
+
+# Criar perfil de desenvolvimento
+omni config profile create development
+omni config set hostinger_api_token $DEV_HOSTINGER_TOKEN
+omni config set unleash_url https://unleash.dev.empresa.com
+
+# Trocar de perfil
+omni config profile use production
+omni config profile use development
+```
+
 ## Auditoria
 
-Rastreie o uso do Omni CLI em ambientes compartilhados:
+O Omni CLI suporta audit logging via variável de ambiente `OMNI_AUDIT_LOG`:
 
 ```bash
 # Habilitar audit logging
 export OMNI_AUDIT_LOG=/var/log/omni/audit.log
 mkdir -p /var/log/omni
+
+# Todos os comandos são logados
+omni hostinger domains
+omni unleash flags
 ```
 
-Considere envolver comandos críticos:
+Exemplo de entrada no audit log:
+
+```text
+2026-06-22T20:00:00+00:00 - user=john command=omni hostinger domains
+```
+
+Considere envolver comandos críticos para integração adicional com syslog:
 
 ```bash
 #!/bin/bash
@@ -183,3 +213,14 @@ Considere envolver comandos críticos:
 logger -t omni "User: $USER, Command: $*"
 omni "$@"
 ```
+
+## Níveis de Logging
+
+Controle o logging interno do Omni CLI:
+
+```bash
+export OMNI_LOG_LEVEL=INFO  # DEBUG, INFO, WARNING, ERROR
+omni status
+```
+
+Logs são escritos em `~/.config/omni/logs/omni.log` quando há permissão de escrita.

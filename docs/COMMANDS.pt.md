@@ -122,6 +122,71 @@ omni config show
 omni config set thunderbolt_disk /Volumes/ThunderboltSSD
 ```
 
+## `omni cloudflare`
+
+Gerenciamento de DNS e cache do Cloudflare.
+
+| Comando | Descrição |
+|---------|-----------|
+| `omni cloudflare zones` | Listar zonas |
+| `omni cloudflare dns <dominio>` | Listar registros DNS |
+| `omni cloudflare purge <dominio>` | Limpar cache |
+
+## `omni aws`
+
+Gerenciamento de recursos AWS via AWS CLI.
+
+| Comando | Descrição |
+|---------|-----------|
+| `omni aws status` | Verificar autenticação do AWS CLI |
+| `omni aws s3` | Listar buckets S3 |
+| `omni aws ec2 [--region <regiao>]` | Listar instâncias EC2 |
+| `omni aws route53 [--zone <zone-id>]` | Listar zonas/records Route53 |
+
+## `omni vercel`
+
+Gerenciamento de projetos e deployments Vercel.
+
+| Comando | Descrição |
+|---------|-----------|
+| `omni vercel projects` | Listar projetos |
+| `omni vercel deployments [--project <nome>]` | Listar deployments |
+| `omni vercel env <projeto>` | Listar variáveis de ambiente |
+
+## `omni plugins`
+
+Gerenciamento de plugins.
+
+| Comando | Descrição |
+|---------|-----------|
+| `omni plugins list` | Listar plugins instalados |
+| `omni plugins search <query>` | Buscar plugins |
+| `omni plugins install <pacote>` | Instalar plugin |
+| `omni plugins uninstall <pacote>` | Desinstalar plugin |
+| `omni plugins create <nome>` | Criar template de plugin |
+
+## `omni update`
+
+Self-update do Omni CLI.
+
+| Opção | Descrição |
+|-------|-----------|
+| `omni update --check` | Verificar atualizações |
+| `omni update --force` | Forçar reinstalação |
+| `omni update --dry-run` | Mostrar o que seria feito |
+
+## `omni config profile`
+
+Gerenciamento de perfis de configuração.
+
+| Comando | Descrição |
+|---------|-----------|
+| `omni config profile list` | Listar perfis |
+| `omni config profile create <nome> [--from <base>]` | Criar perfil |
+| `omni config profile use <nome>` | Ativar perfil |
+| `omni config profile delete <nome>` | Deletar perfil |
+| `omni config profile show <nome>` | Mostrar config do perfil |
+
 ## `omni completion`
 
 Configuração de shell completion.

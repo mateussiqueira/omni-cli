@@ -122,6 +122,71 @@ omni config show
 omni config set thunderbolt_disk /Volumes/ThunderboltSSD
 ```
 
+## `omni cloudflare`
+
+Cloudflare DNS and cache management.
+
+| Command | Description |
+|---------|-------------|
+| `omni cloudflare zones` | List zones |
+| `omni cloudflare dns <domain>` | List DNS records |
+| `omni cloudflare purge <domain>` | Purge cache |
+
+## `omni aws`
+
+AWS resource management via AWS CLI.
+
+| Command | Description |
+|---------|-------------|
+| `omni aws status` | Check AWS CLI authentication |
+| `omni aws s3` | List S3 buckets |
+| `omni aws ec2 [--region <region>]` | List EC2 instances |
+| `omni aws route53 [--zone <zone-id>]` | List Route53 zones/records |
+
+## `omni vercel`
+
+Vercel project and deployment management.
+
+| Command | Description |
+|---------|-------------|
+| `omni vercel projects` | List projects |
+| `omni vercel deployments [--project <name>]` | List deployments |
+| `omni vercel env <project>` | List environment variables |
+
+## `omni plugins`
+
+Plugin management.
+
+| Command | Description |
+|---------|-------------|
+| `omni plugins list` | List installed plugins |
+| `omni plugins search <query>` | Search for plugins |
+| `omni plugins install <package>` | Install a plugin |
+| `omni plugins uninstall <package>` | Uninstall a plugin |
+| `omni plugins create <name>` | Create plugin template |
+
+## `omni update`
+
+Self-update Omni CLI.
+
+| Option | Description |
+|--------|-------------|
+| `omni update --check` | Check for updates |
+| `omni update --force` | Force reinstall |
+| `omni update --dry-run` | Show what would be done |
+
+## `omni config profile`
+
+Configuration profile management.
+
+| Command | Description |
+|---------|-------------|
+| `omni config profile list` | List profiles |
+| `omni config profile create <name> [--from <base>]` | Create profile |
+| `omni config profile use <name>` | Activate profile |
+| `omni config profile delete <name>` | Delete profile |
+| `omni config profile show <name>` | Show profile config |
+
 ## `omni completion`
 
 Shell completion setup.

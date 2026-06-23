@@ -8,7 +8,26 @@ from rich.panel import Panel
 from rich.text import Text
 
 from omni import __version__
-from omni.commands import completion, config, github, hostinger, mcp, memory, unleash
+from omni.commands import (
+    aws,
+    cloudflare,
+    completion,
+    config,
+    github,
+    hostinger,
+    mcp,
+    memory,
+    plugins,
+    unleash,
+    update,
+    vercel,
+)
+from omni.core.logger import audit_command, setup_audit_logging, setup_logging
+from omni.core.plugins import register_plugins
+
+# Setup logging early
+logger = setup_logging()
+setup_audit_logging()
 
 app = typer.Typer(
     name="omni",
@@ -18,7 +37,7 @@ app = typer.Typer(
 )
 console = Console()
 
-# Register subcommands
+# Register built-in subcommands
 app.add_typer(memory.app, name="memory", help="🧠 Mac memory optimization")
 app.add_typer(mcp.app, name="mcp", help="🔌 MCP server management")
 app.add_typer(hostinger.app, name="hostinger", help="🌐 Hostinger domain/VPS management")
@@ -26,6 +45,14 @@ app.add_typer(github.app, name="github", help="🐙 GitHub repository management
 app.add_typer(unleash.app, name="unleash", help="🚦 Unleash feature flags")
 app.add_typer(config.app, name="config", help="⚙️  Omni CLI configuration")
 app.add_typer(completion.app, name="completion", help="🐚 Shell completion")
+app.add_typer(plugins.app, name="plugins", help="🔌 Plugin management")
+app.add_typer(update.app, name="update", help="🚀 Update Omni CLI")
+app.add_typer(cloudflare.app, name="cloudflare", help="☁️  Cloudflare management")
+app.add_typer(aws.app, name="aws", help="🌩️  AWS management")
+app.add_typer(vercel.app, name="vercel", help="▲ Vercel management")
+
+# Register external plugins automatically
+register_plugins(app)
 
 
 @app.command("version")
@@ -51,8 +78,17 @@ def status() -> None:
 @app.callback()
 def main(
     version_flag: bool = typer.Option(False, "--version", "-v", help="Show version"),
+    ctx: typer.Context = typer.Option(None),
 ) -> None:
     """Omni CLI - A CLI das CLIs."""
+    # Audit logging
+    if ctx is not None and hasattr(ctx, "args"):
+        try:
+            import sys
+            audit_command(sys.argv)
+        except Exception:
+            pass
+
     if version_flag:
         typer.echo(f"Omni CLI {__version__}")
         raise typer.Exit()

@@ -34,11 +34,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Real plugin system with entry point discovery (`omni.plugins`)
+- Plugin management commands: `omni plugins list/install/uninstall/create`
+- Configuration profiles: `omni config profile create/use/list/delete/show`
+- Self-update command: `omni update`
+- Audit logging via `OMNI_AUDIT_LOG`
+- Structured logging via `OMNI_LOG_LEVEL`
+- Cloudflare integration: `omni cloudflare zones/dns/purge`
+- AWS integration: `omni aws s3/ec2/route53/status`
+- Vercel integration: `omni vercel projects/deployments/env`
+- Extended test suite (19 tests)
+- Logo, banner, favicon and social preview assets
+
+### Changed
+
+- READMEs updated with new commands and documentation links
+- Architecture documentation updated
+
+## [0.1.1] - 2026-06-22
+
 ### Planned
 
-- Plugin system for external command packs
-- Shell completion for Fish
-- Configuration profiles
 - Encrypted credential storage
 - Web dashboard for monitoring
-- More cloud provider integrations
+- More cloud provider integrations (DigitalOcean, Hetzner, Azure, GCP)
+- Native installers (Homebrew, .deb, .rpm)
+- Fish shell completion

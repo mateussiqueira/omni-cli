@@ -165,17 +165,47 @@ Avoid using personal accounts for team operations. Create service accounts or bo
 - Dedicated Hostinger API users
 - Unleash service accounts
 
+## Configuration Profiles
+
+Use profiles to switch between environments:
+
+```bash
+# Create production profile
+omni config profile create production
+omni config set hostinger_api_token $PROD_HOSTINGER_TOKEN
+omni config set unleash_url https://unleash.prod.company.com
+
+# Create development profile
+omni config profile create development
+omni config set hostinger_api_token $DEV_HOSTINGER_TOKEN
+omni config set unleash_url https://unleash.dev.company.com
+
+# Switch profiles
+omni config profile use production
+omni config profile use development
+```
+
 ## Audit Logging
 
-Track command usage in shared environments:
+Omni CLI supports audit logging via the `OMNI_AUDIT_LOG` environment variable:
 
 ```bash
 # Enable audit logging
 export OMNI_AUDIT_LOG=/var/log/omni/audit.log
 mkdir -p /var/log/omni
+
+# All commands are now logged
+omni hostinger domains
+omni unleash flags
 ```
 
-Consider wrapping critical commands:
+Example audit log entry:
+
+```text
+2026-06-22T20:00:00+00:00 - user=john command=omni hostinger domains
+```
+
+Consider wrapping critical commands for additional syslog integration:
 
 ```bash
 #!/bin/bash
@@ -183,3 +213,14 @@ Consider wrapping critical commands:
 logger -t omni "User: $USER, Command: $*"
 omni "$@"
 ```
+
+## Logging Levels
+
+Control Omni CLI internal logging:
+
+```bash
+export OMNI_LOG_LEVEL=INFO  # DEBUG, INFO, WARNING, ERROR
+omni status
+```
+
+Logs are written to `~/.config/omni/logs/omni.log` when writable.

@@ -90,6 +90,14 @@ omni hostinger vps
 omni hostinger dns conecthu.com
 ```
 
+### Cloudflare, AWS, Vercel
+
+```bash
+omni cloudflare zones
+omni aws status
+omni vercel projects
+```
+
 ### GitHub operations
 
 ```bash
@@ -104,8 +112,17 @@ omni mcp list
 omni mcp add filesystem npx -y @modelcontextprotocol/server-filesystem /Users
 ```
 
+### Plugins and profiles
+
+```bash
+omni plugins list
+omni config profile create production
+omni config profile use production
+```
+
 ## Next Steps
 
 - Read the [Command Reference](COMMANDS.md)
 - Learn about the [Architecture](ARCHITECTURE.md)
+- Explore [Plugin Development](PLUGIN_DEVELOPMENT.md)
 - Read in [Português](../README.pt.md)

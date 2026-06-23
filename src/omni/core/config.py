@@ -33,6 +33,12 @@ class OmniConfig(BaseSettings):
     unleash_url: str = Field(default="", description="Unleash server URL")
     unleash_api_token: str = Field(default="", description="Unleash API token")
 
+    # Cloudflare
+    cloudflare_api_token: str = Field(default="", description="Cloudflare API token")
+
+    # Vercel
+    vercel_token: str = Field(default="", description="Vercel API token")
+
     # MCP
     mcp_config_path: str = Field(
         default="~/.config/mcp/servers.json",
@@ -84,3 +90,8 @@ class OmniConfig(BaseSettings):
 # Global config instance
 config = OmniConfig()
 config.load_from_file()
+
+# Load active profile if set
+from omni.core.profiles import initialize_config_with_profile
+
+initialize_config_with_profile()
