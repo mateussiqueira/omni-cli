@@ -1,5 +1,7 @@
 # 🌟 Omni CLI
 
+![Omni CLI Banner](assets/banner.png)
+
 > **The CLI of CLIs** — A unified hub to orchestrate development tools.
 
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://python.org)
