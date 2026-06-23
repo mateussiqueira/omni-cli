@@ -1,0 +1,124 @@
+site_name: Omni CLI
+site_description: The CLI of CLIs — A unified hub to orchestrate development tools
+site_url: https://omni-cli.vercel.app/
+site_author: Mateus Siqueira
+
+repo_name: mateussiqueira/omni-cli
+repo_url: https://github.com/mateussiqueira/omni-cli
+edit_uri: edit/main/docs/
+
+copyright: Copyright &copy; 2026 Mateus Siqueira
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    # - navigation.instant  # disabled for i18n compatibility
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: en
+          name: English
+          default: true
+          build: true
+        - locale: pt
+          name: Português
+          build: true
+          nav_translations:
+            Home: Início
+            "Getting Started": Primeiros Passos
+            Installation: Instalação
+            "Command Reference": Referência de Comandos
+            Examples: Exemplos
+            Architecture: Arquitetura
+            "Use Cases": Casos de Uso
+            FAQ: FAQ
+            Troubleshooting: Solução de Problemas
+            Advanced: Avançado
+            "Memory Deep Dive": Mergulho na Memória
+            "MCP Integration": Integração MCP
+            "Plugin Development": Desenvolvimento de Plugins
+            "Enterprise Setup": Configuração Empresarial
+            Performance: Performance
+            Migration: Migração
+            Contributing: Contribuição
+            Security: Segurança
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mateussiqueira/omni-cli
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/omni-cli/
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting Started: GETTING_STARTED.md
+  - Installation: INSTALLATION.md
+  - Command Reference: COMMANDS.md
+  - Examples: EXAMPLES.md
+  - Architecture: ARCHITECTURE.md
+  - Use Cases: USE_CASES.md
+  - FAQ: FAQ.md
+  - Troubleshooting: TROUBLESHOOTING.md
+  - Advanced:
+      - Memory Deep Dive: MEMORY_DEEP_DIVE.md
+      - MCP Integration: MCP_INTEGRATION.md
+      - Plugin Development: PLUGIN_DEVELOPMENT.md
+      - Enterprise Setup: ENTERPRISE_SETUP.md
+      - Performance: PERFORMANCE.md
+      - Migration: MIGRATION.md
+  - Contributing: CONTRIBUTING.md
+  - Security: SECURITY.md
+
+extra_css:
+  - stylesheets/extra.css

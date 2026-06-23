@@ -95,7 +95,7 @@ Adiciona funcionalidade X ao comando Y
 
 ## Código de Conduta
 
-Por favor, seja respeitoso e construtivo em todas as interações. Veja [CODE_OF_CONDUCT.md](../CODE_OF_CONDUCT.md).
+Por favor, seja respeitoso e construtivo em todas as interações. Veja [CODE_OF_CONDUCT.md](https://github.com/mateussiqueira/omni-cli/blob/main/CODE_OF_CONDUCT.md).
 
 ## Dúvidas?
 

@@ -4,9 +4,9 @@ Problemas comuns e soluções ao usar o Omni CLI.
 
 ## Índice
 
-- [Problemas de Instalação](#problemas-de-instalação)
-- [Problemas de Permissão](#problemas-de-permissão)
-- [Comandos de Memória](#comandos-de-memória)
+- [Problemas de Instalação](#problemas-de-instalacao)
+- [Problemas de Permissão](#problemas-de-permissao)
+- [Comandos de Memória](#comandos-de-memoria)
 - [API Hostinger](#api-hostinger)
 - [API GitHub](#api-github)
 - [Servidores MCP](#servidores-mcp)

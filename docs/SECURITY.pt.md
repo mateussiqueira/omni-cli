@@ -6,11 +6,11 @@ Melhores práticas de segurança para usar o Omni CLI com segurança.
 
 - [Armazenamento de Credenciais](#armazenamento-de-credenciais)
 - [Gerenciamento de Tokens de API](#gerenciamento-de-tokens-de-api)
-- [Privilégio Mínimo](#privilégio-mínimo)
-- [Segurança do Arquivo de Configuração](#segurança-do-arquivo-de-configuração)
-- [Segurança de Rede](#segurança-de-rede)
+- [Privilégio Mínimo](#privilegio-minimo)
+- [Segurança do Arquivo de Configuração](#seguranca-do-arquivo-de-configuracao)
+- [Segurança de Rede](#seguranca-de-rede)
 - [Auditoria e Monitoramento](#auditoria-e-monitoramento)
-- [Reportando Problemas de Segurança](#reportando-problemas-de-segurança)
+- [Reportando Problemas de Segurança](#reportando-problemas-de-seguranca)
 
 ## Armazenamento de Credenciais
 

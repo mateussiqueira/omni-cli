@@ -95,7 +95,7 @@ Add feature X to command Y
 
 ## Code of Conduct
 
-Please be respectful and constructive in all interactions. See [CODE_OF_CONDUCT.md](../CODE_OF_CONDUCT.md).
+Please be respectful and constructive in all interactions. See [CODE_OF_CONDUCT.md](https://github.com/mateussiqueira/omni-cli/blob/main/CODE_OF_CONDUCT.md).
 
 ## Questions?
 

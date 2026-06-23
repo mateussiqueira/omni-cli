@@ -1,0 +1,39 @@
+:root {
+  --omni-primary: #3f51b5;
+  --omni-accent: #00bcd4;
+}
+
+.md-header {
+  background: linear-gradient(135deg, var(--omni-primary), #1a237e) !important;
+}
+
+.md-tabs {
+  background: linear-gradient(135deg, #283593, var(--omni-primary)) !important;
+}
+
+.md-typeset h1 {
+  color: var(--omni-primary);
+  font-weight: 700;
+}
+
+.md-typeset h2 {
+  color: var(--omni-accent);
+  font-weight: 600;
+}
+
+.md-typeset code {
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+.md-banner {
+  background: linear-gradient(135deg, var(--omni-primary), #1a237e);
+  color: white;
+  text-align: center;
+  padding: 0.4rem;
+}
+
+.md-banner a {
+  color: var(--omni-accent);
+  text-decoration: underline;
+}

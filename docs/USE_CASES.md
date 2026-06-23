@@ -9,7 +9,7 @@ Practical scenarios where Omni CLI delivers value.
 - [DevOps Engineer](#devops-engineer)
 - [Startup Founder](#startup-founder)
 - [Freelancer Managing Multiple Clients](#freelancer-managing-multiple-clients)
-- [SRE / Platform Engineer](#sre--platform-engineer)
+- [SRE / Platform Engineer](#sre-platform-engineer)
 
 ## Solo Developer
 

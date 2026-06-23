@@ -8,6 +8,7 @@
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![PyPI](https://img.shields.io/badge/pypi-omni--cli-blue)](https://pypi.org/project/omni-cli/)
 [![CI](https://github.com/mateussiqueira/omni-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/mateussiqueira/omni-cli/actions/workflows/ci.yml)
+[![Docs](https://img.shields.io/badge/docs-github--pages-blue)](https://mateussiqueira.github.io/omni-cli/)
 [![Tests](https://img.shields.io/badge/tests-4%2F4%20passing-brightgreen)](tests)
 
 ```text
@@ -107,6 +108,8 @@ omni completion zsh
 ```
 
 ## 📚 Documentation
+
+> **Full documentation site**: [mateussiqueira.github.io/omni-cli](https://mateussiqueira.github.io/omni-cli/) — with search, multi-language (EN/PT), and mobile-friendly layout.
 
 - [Getting Started](docs/GETTING_STARTED.md)
 - [Installation Guide](docs/INSTALLATION.md)

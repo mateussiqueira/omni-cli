@@ -5,10 +5,10 @@ Migre de outras ferramentas para o Omni CLI.
 ## Índice
 
 - [De Uso Direto de API](#de-uso-direto-de-api)
-- [De Múltiplas CLIs](#de-múltiplas-clis)
+- [De Múltiplas CLIs](#de-multiplas-clis)
 - [De Shell Scripts](#de-shell-scripts)
-- [De Outras Ferramentas de Memória](#de-outras-ferramentas-de-memória)
-- [Checklist de Migração](#checklist-de-migração)
+- [De Outras Ferramentas de Memória](#de-outras-ferramentas-de-memoria)
+- [Checklist de Migração](#checklist-de-migracao)
 
 ## De Uso Direto de API
 

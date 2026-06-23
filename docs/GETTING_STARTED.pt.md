@@ -125,4 +125,4 @@ omni config profile use production
 - Leia a [Referência de Comandos](COMMANDS.pt.md)
 - Conheça a [Arquitetura](ARCHITECTURE.md) (EN)
 - Explore [Desenvolvimento de Plugins](PLUGIN_DEVELOPMENT.pt.md)
-- Leia em [English](../README.md)
+- Leia em [English](https://github.com/mateussiqueira/omni-cli/blob/main/README.md)

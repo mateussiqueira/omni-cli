@@ -7,11 +7,11 @@ Guia completo para instalar o Omni CLI em qualquer plataforma.
 - [Requisitos do Sistema](#requisitos-do-sistema)
 - [Instalar via PyPI](#instalar-via-pypi)
 - [Instalar do Source](#instalar-do-source)
-- [Instalar com pipx](#instalar-com-pipx)
+- [Instalar com pipx](#usando-pipx-recomendado-para-clis)
 - [Instalar no macOS](#instalar-no-macos)
 - [Instalar no Linux](#instalar-no-linux)
 - [Instalar no Windows](#instalar-no-windows)
-- [Verificar Instalação](#verificar-instalação)
+- [Verificar Instalação](#verificar-instalacao)
 - [Atualizar](#atualizar)
 - [Desinstalar](#desinstalar)
 

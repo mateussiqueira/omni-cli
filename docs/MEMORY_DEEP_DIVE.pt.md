@@ -4,15 +4,15 @@ Guia completo para entender e otimizar a memória do macOS com o Omni CLI e SSD 
 
 ## Índice
 
-- [Como o macOS Gerencia Memória](#como-o-macos-gerencia-memória)
+- [Como o macOS Gerencia Memória](#como-o-macos-gerencia-memoria)
 - [Por Que Usar um SSD Externo](#por-que-usar-um-ssd-externo)
 - [Thunderbolt 4 vs Outras Interfaces](#thunderbolt-4-vs-outras-interfaces)
-- [Estratégias de Configuração](#estratégias-de-configuração)
-- [Especificações Recomendadas de SSD](#especificações-recomendadas-de-ssd)
-- [Monitorando a Pressão de Memória](#monitorando-a-pressão-de-memória)
+- [Estratégias de Configuração](#estrategias-de-configuracao)
+- [Especificações Recomendadas de SSD](#especificacoes-recomendadas-de-ssd)
+- [Monitorando a Pressão de Memória](#monitorando-a-pressao-de-memoria)
 - [Movendo Caches de Apps](#movendo-caches-de-apps)
-- [Configurações do macOS para Melhor Performance](#configurações-do-macos-para-melhor-performance)
-- [Quando Não Usar Swap Externo](#quando-não-usar-swap-externo)
+- [Configurações do macOS para Melhor Performance](#configuracoes-do-macos-para-melhor-performance)
+- [Quando Não Usar Swap Externo](#quando-nao-usar-swap-externo)
 
 ## Como o macOS Gerencia Memória
 

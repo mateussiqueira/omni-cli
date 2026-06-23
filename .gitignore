@@ -56,5 +56,9 @@ config.toml
 .AppleDouble
 .LSOverride
 
+# MkDocs / GitHub Pages
+site/
+
 # Build artifacts
 *.spec
+.vercel

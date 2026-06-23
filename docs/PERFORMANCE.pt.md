@@ -7,7 +7,7 @@ Expectativas de performance e benchmarking para funcionalidades do Omni CLI.
 - [Performance do SSD Thunderbolt 4](#performance-do-ssd-thunderbolt-4)
 - [SSD Interno vs Externo](#ssd-interno-vs-externo)
 - [Fazendo Benchmark do Seu Setup](#fazendo-benchmark-do-seu-setup)
-- [Impacto da Otimização de Memória](#impacto-da-otimização-de-memória)
+- [Impacto da Otimização de Memória](#impacto-da-otimizacao-de-memoria)
 - [Melhorias Esperadas](#melhorias-esperadas)
 
 ## Performance do SSD Thunderbolt 4

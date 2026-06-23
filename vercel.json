@@ -1,0 +1,7 @@
+{
+  "buildCommand": "python3 -m pip install --break-system-packages -r requirements-docs.txt && python3 -m mkdocs build",
+  "outputDirectory": "site",
+  "framework": null,
+  "cleanUrls": true,
+  "trailingSlash": false
+}

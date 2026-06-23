@@ -4,10 +4,10 @@ Exemplos práticos para casos de uso comuns do Omni CLI.
 
 ## Índice
 
-- [Fluxo de Otimização de Memória](#fluxo-de-otimização-de-memória)
+- [Fluxo de Otimização de Memória](#fluxo-de-otimizacao-de-memoria)
 - [Gerenciamento de Servidores MCP](#gerenciamento-de-servidores-mcp)
-- [Automação de Infraestrutura Hostinger](#automação-de-infraestrutura-hostinger)
-- [Operações de Repositório GitHub](#operações-de-repositório-github)
+- [Automação de Infraestrutura Hostinger](#automacao-de-infraestrutura-hostinger)
+- [Operações de Repositório GitHub](#operacoes-de-repositorio-github)
 - [Fluxo de Feature Flags Unleash](#fluxo-de-feature-flags-unleash)
 - [Combinando Comandos](#combinando-comandos)
 

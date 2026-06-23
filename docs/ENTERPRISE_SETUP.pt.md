@@ -4,10 +4,10 @@ Guia para implantar e usar o Omni CLI em ambientes de times e empresas.
 
 ## Índice
 
-- [Configuração Compartilhada](#configuração-compartilhada)
+- [Configuração Compartilhada](#configuracao-compartilhada)
 - [Perfis de Ambiente](#perfis-de-ambiente)
 - [Gerenciamento de Segredos](#gerenciamento-de-segredos)
-- [Integração com CI/CD](#integração-com-cicd)
+- [Integração com CI/CD](#integracao-com-cicd)
 - [Onboarding de Time](#onboarding-de-time)
 - [Controle de Acesso](#controle-de-acesso)
 - [Auditoria](#auditoria)

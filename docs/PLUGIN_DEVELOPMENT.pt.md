@@ -7,9 +7,9 @@ Aprenda a estender o Omni CLI com comandos customizados.
 - [Arquitetura de Plugins](#arquitetura-de-plugins)
 - [Criando um Plugin Simples](#criando-um-plugin-simples)
 - [Registrando Plugins](#registrando-plugins)
-- [Acessando Utilitários Core](#acessando-utilitários-core)
-- [Configuração de Plugins](#configuração-de-plugins)
-- [Distribuição](#distribuição)
+- [Acessando Utilitários Core](#acessando-utilitarios-core)
+- [Configuração de Plugins](#configuracao-de-plugins)
+- [Distribuição](#distribuicao)
 
 ## Arquitetura de Plugins
 

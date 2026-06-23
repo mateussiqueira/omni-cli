@@ -108,6 +108,8 @@ omni completion zsh
 
 ## 📚 Documentação
 
+> **Site completo de documentação**: [mateussiqueira.github.io/omni-cli](https://mateussiqueira.github.io/omni-cli/) — com busca, multi-idioma (PT/EN) e layout responsivo.
+
 - [Primeiros Passos](docs/GETTING_STARTED.pt.md)
 - [Guia de Instalação](docs/INSTALLATION.pt.md)
 - [Referência de Comandos](docs/COMMANDS.pt.md)

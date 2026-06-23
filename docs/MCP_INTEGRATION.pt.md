@@ -4,7 +4,7 @@ Integre servidores MCP gerenciados pelo Omni CLI com assistentes de IA, editores
 
 ## Índice
 
-- [O Que é MCP](#o-que-é-mcp)
+- [O Que é MCP](#o-que-e-mcp)
 - [Clientes Suportados](#clientes-suportados)
 - [Adicionando Servidores com Omni CLI](#adicionando-servidores-com-omni-cli)
 - [Claude Desktop](#claude-desktop)

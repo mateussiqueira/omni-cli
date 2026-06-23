@@ -8,8 +8,8 @@ Cenários práticos onde o Omni CLI entrega valor.
 - [Time de Desenvolvimento](#time-de-desenvolvimento)
 - [Engenheiro DevOps](#engenheiro-devops)
 - [Fundador de Startup](#fundador-de-startup)
-- [Freelancer Gerenciando Vários Clientes](#freelancer-gerenciando-vários-clientes)
-- [Engenheiro SRE / Plataforma](#engenheiro-sre--plataforma)
+- [Freelancer Gerenciando Vários Clientes](#freelancer-gerenciando-varios-clientes)
+- [Engenheiro SRE / Plataforma](#engenheiro-sre-plataforma)
 
 ## Desenvolvedor Solo
 
