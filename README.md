@@ -1,15 +1,14 @@
-# 🌟 Omni CLI
-
-![Omni CLI Banner](assets/banner.png)
-
-> **The CLI of CLIs** — A unified hub to orchestrate development tools.
-
-[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://python.org)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![PyPI](https://img.shields.io/badge/pypi-omni--cli-blue)](https://pypi.org/project/omni-cli/)
-[![CI](https://github.com/mateussiqueira/omni-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/mateussiqueira/omni-cli/actions/workflows/ci.yml)
-[![Docs](https://img.shields.io/badge/docs-github--pages-blue)](https://mateussiqueira.github.io/omni-cli/)
-[![Tests](https://img.shields.io/badge/tests-4%2F4%20passing-brightgreen)](tests)
+<p align="center">
+  <img src="assets/logo.svg" alt="Omni CLI" width="120">
+</p>
+<p align="center"><strong>Omni CLI</strong> — The CLI of CLIs — A unified hub to orchestrate development tools.</p>
+<p align="center">
+  <a href="https://python.org"><img alt="Python" src="https://img.shields.io/badge/python-3.10%2B-blue" /></a>
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-green" /></a>
+  <a href="https://pypi.org/project/omni-cli/"><img alt="PyPI" src="https://img.shields.io/badge/pypi-omni--cli-blue" /></a>
+  <a href="https://github.com/mateussiqueira/omni-cli/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/mateussiqueira/omni-cli/ci.yml?style=flat-square&branch=main" /></a>
+  <a href="https://omni-cli.vercel.app"><img alt="Docs" src="https://img.shields.io/badge/docs-vercel-blue" /></a>
+</p>
 
 ```text
   ██████  ███    ███ ██ ███    ██
